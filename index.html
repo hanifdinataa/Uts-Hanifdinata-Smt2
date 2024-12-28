@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>UTS WEB DASAR</title>
     <style>
+        /* Mengatur layout secara default */
         *,
         html {
             margin: 0;
@@ -18,112 +19,63 @@
 
         body {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.6;
         }
 
+        /* Header */
         header {
             padding: 15px;
             background-color: #49243E;
             display: flex;
+            justify-content: space-between;
             border-radius: 8px;
             transition: 0.3s;
+            flex-wrap: wrap;
         }
 
         header:hover {
             background-color: #773c65;
         }
 
+        /* Logo dan Menu */
+        .logo h1 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .logo p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .list ul {
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .list a:hover {
+            color: yellowgreen;
+            text-decoration: underline;
+        }
+
+        /* Content */
         content {
             background-color: #193653;
             color: #fff;
             width: 70%;
             height: 450px;
             float: left;
+            padding: 20px;
+            box-sizing: border-box;
             transition: 0.3s;
-        }
-
-        content:hover {
-            background-color: #773c65;
-            transition: 0.3s;
-        }
-
-        sidebar {
-
-            background-color: #f35c5c;
-            color: black;
-            width: 30%;
-            height: 450px;
-            float: right;
-        }
-
-        .ti {
-            margin-left: 20px;
-            margin-top: 30px;
-            color: white;
-        }
-
-        .ti li {
-            list-style: none;
-
-        }
-
-        .ti a {
-            text-decoration: none;
-            color: white;
-            transition: 0.5s;
-        }
-
-        .ti a:hover {
-            color: black;
-            transition: 0.5s;
-            text-decoration: underline;
-        }
-
-        .ti ul {
-            margin-top: 20px;
-        }
-
-        footer {
-            background-color: #be1212;
-            color: #fff;
-            float: left;
-            padding: 30px;
-            clear: both;
-            text-align: center;
-            width: 100%;
-        }
-
-        .list ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            gap: 2rem;
-            justify-content: center;
-            font-size: 25px;
-            margin: 13px;
-            margin-left: 150px;
-
-        }
-
-        .list a {
-            text-align: center;
-            list-style: none;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            transition: 0.3s;
-        }
-
-        .list a:hover {
-            color: rgb(252, 140, 36);
-            transition: 0.3s;
-        }
-
-        .logo p {
-            margin-top: 8px;
-
-        }
-
-        .logo {
-            color: white;
         }
 
         content img {
@@ -141,18 +93,114 @@
             margin-right: 15px;
         }
 
-        .icon {
-            transition: 0.3s;
+        /* Sidebar */
+        sidebar {
+            background-color: #f35c5c;
+            color: black;
+            width: 30%;
+            height: 450px;
+            float: right;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
-        .kata i {
+        .ti {
+            margin-left: 20px;
+        }
+
+        .ti li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        .ti a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        .ti a:hover {
             color: white;
+            text-decoration: underline;
         }
 
-        .icon:hover {
-            color: yellowgreen;
-            transition: 0.3s;
-            text-decoration: underline;
+        /* Footer */
+        footer {
+            background-color: #be1212;
+            color: #fff;
+            clear: both;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Media Queries untuk Responsivitas */
+        @media screen and (max-width: 768px) {
+            /* Mengatur ulang layout untuk layar kecil */
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            content {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            sidebar {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            .logo h1 {
+                font-size: 22px;
+            }
+
+            .list ul {
+                display: block;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .list a {
+                font-size: 16px;
+            }
+
+            .kata h1 {
+                font-size: 20px;
+            }
+
+            .ti li {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            /* Layout lebih fleksibel untuk layar sangat kecil */
+            .logo h1 {
+                font-size: 18px;
+            }
+
+            .list a {
+                font-size: 14px;
+            }
+
+            .kata h1 {
+                font-size: 18px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+
+            .ti ul {
+                display: block;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -172,7 +220,6 @@
                 <li><a href="datadosen.html">Data Dosen</a></li>
             </ul>
         </div>
-
     </header>
     <content>
         <img src="tekno.jpg" alt="Teknologi Informasi" title="Teknologi Informasi" width="100px">
@@ -180,17 +227,15 @@
             <h1>Teknologi Informasi</h1><br>
             <p>Teknologi Informasi (TI), atau dalam bahasa Inggris dikenal dengan istilah <i>Information technology
                     (IT)</i> adalah istilah umum untuk teknologi apa pun yang membantu manusia dalam membuat, mengubah,
-                menyimpan, mengomunikasikan dan/atau menyebarkan informasi.
-                TI menyatukan komputasi dan komunikasi berkecepatan tinggi untuk data, suara, dan video. Contoh dari
-                Teknologi Informasi bukan hanya berupa komputer pribadi, tetapi juga telepon, TV, peralatan rumah tangga
-                elektronik, dan perangkat genggam modern (misalnya ponsel) </p>
+                menyimpan, mengomunikasikan dan/atau menyebarkan informasi. TI menyatukan komputasi dan komunikasi
+                berkecepatan tinggi untuk data, suara, dan video. Contoh dari Teknologi Informasi bukan hanya berupa
+                komputer pribadi, tetapi juga telepon, TV, peralatan rumah tangga elektronik, dan perangkat genggam
+                modern (misalnya ponsel) </p>
             <p class="icon"><i class="fa-solid fa-building-columns"></i>Politeknik Negeri Padang</p>
             <p class="icon"><i class="fa-brands fa-instagram"></i>Teknologiinformasipnp</p>
-            <p class="icon"><i class="fa-solid fa-house"></i>Jl. Kampus, Limau Manis, Kec. Pauh, Kota Padang, Sumatera
-                Barat 25164</p>
+            <p class="icon"><i class="fa-solid fa-house"></i>Jl. Kampus, Limau Manis, Kec. Pauh, Kota Padang, Sumatera Barat 25164</p>
             <p class="icon"><i class="fa-solid fa-phone"></i>(0751) 72590</p>
         </div>
-
     </content>
     <sidebar>
         <div class="ti">
@@ -201,7 +246,6 @@
                 <li><a href="">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
             </ul>
         </div>
-
     </sidebar>
     <footer>
         <p>CopyRight&copy; By Hanif dinata | 2301083015</p>
