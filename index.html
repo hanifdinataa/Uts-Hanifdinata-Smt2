@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Hanif dinata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>UTS WEB DASAR</title>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header {
+            padding: 15px;
+            background-color: #49243E;
+            display: flex;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        header:hover {
+            background-color: #773c65;
+        }
+
+        content {
+            background-color: #193653;
+            color: #fff;
+            width: 70%;
+            height: 450px;
+            float: left;
+            transition: 0.3s;
+        }
+
+        content:hover {
+            background-color: #773c65;
+            transition: 0.3s;
+        }
+
+        sidebar {
+
+            background-color: #f35c5c;
+            color: black;
+            width: 30%;
+            height: 450px;
+            float: right;
+        }
+
+        .ti {
+            margin-left: 20px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .ti li {
+            list-style: none;
+
+        }
+
+        .ti a {
+            text-decoration: none;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .ti a:hover {
+            color: black;
+            transition: 0.5s;
+            text-decoration: underline;
+        }
+
+        .ti ul {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #be1212;
+            color: #fff;
+            float: left;
+            padding: 30px;
+            clear: both;
+            text-align: center;
+            width: 100%;
+        }
+
+        .list ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            font-size: 25px;
+            margin: 13px;
+            margin-left: 150px;
+
+        }
+
+        .list a {
+            text-align: center;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+
+        .list a:hover {
+            color: rgb(252, 140, 36);
+            transition: 0.3s;
+        }
+
+        .logo p {
+            margin-top: 8px;
+
+        }
+
+        .logo {
+            color: white;
+        }
+
+        content img {
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 150px;
+        }
+
+        .kata {
+            margin: 20px;
+        }
+
+        .kata i {
+            margin-top: 15px;
+            margin-right: 15px;
+        }
+
+        .icon {
+            transition: 0.3s;
+        }
+
+        .kata i {
+            color: white;
+        }
+
+        .icon:hover {
+            color: yellowgreen;
+            transition: 0.3s;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>UTS Web Dasar</h1>
+            <p>Hanif Dinata &laquo; 2301083015 &raquo; D3 Teknik Komputer</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="Mahasiswa.html">Mahasiswa</a></li>
+                <li><a href="HitungDiskon.html">Hitung Diskon</a></li>
+                <li><a href="datadosen.html">Data Dosen</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <content>
+        <img src="tekno.jpg" alt="Teknologi Informasi" title="Teknologi Informasi" width="100px">
+        <div class="kata">
+            <h1>Teknologi Informasi</h1><br>
+            <p>Teknologi Informasi (TI), atau dalam bahasa Inggris dikenal dengan istilah <i>Information technology
+                    (IT)</i> adalah istilah umum untuk teknologi apa pun yang membantu manusia dalam membuat, mengubah,
+                menyimpan, mengomunikasikan dan/atau menyebarkan informasi.
+                TI menyatukan komputasi dan komunikasi berkecepatan tinggi untuk data, suara, dan video. Contoh dari
+                Teknologi Informasi bukan hanya berupa komputer pribadi, tetapi juga telepon, TV, peralatan rumah tangga
+                elektronik, dan perangkat genggam modern (misalnya ponsel) </p>
+            <p class="icon"><i class="fa-solid fa-building-columns"></i>Politeknik Negeri Padang</p>
+            <p class="icon"><i class="fa-brands fa-instagram"></i>Teknologiinformasipnp</p>
+            <p class="icon"><i class="fa-solid fa-house"></i>Jl. Kampus, Limau Manis, Kec. Pauh, Kota Padang, Sumatera
+                Barat 25164</p>
+            <p class="icon"><i class="fa-solid fa-phone"></i>(0751) 72590</p>
+        </div>
+
+    </content>
+    <sidebar>
+        <div class="ti">
+            <h1>Ada 3 Prodi TI, Yaitu :</h1>
+            <ul>
+                <li><a href="">D3 Teknik Komputer</a></li>
+                <li><a href="">D3 Manajemen Informatika</a></li>
+                <li><a href="">D4 Teknologi Rekayasa Perangkat Lunak</a></li>
+            </ul>
+        </div>
+
+    </sidebar>
+    <footer>
+        <p>CopyRight&copy; By Hanif dinata | 2301083015</p>
+    </footer>
+</body>
+
+</html>

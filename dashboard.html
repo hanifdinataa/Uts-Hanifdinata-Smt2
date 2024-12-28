@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Hanif dinata">
+    <title>UTS WEB DASAR</title>
+    <style>
+
+        *, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+
+        header {
+            padding: 15px;
+            background-color: #49243E;
+            display: flex;
+            border-radius: 8px;
+            transition: 0.3s;
+            box-shadow: 9px 9px 19px rgba(0, 0, 0, 0.5);
+        }
+
+        header:hover {
+            background-color: #773c65;
+        }
+
+        content {
+            background-color: #496989;
+            color: #fff;
+            width: 70%;
+            height: 450px;
+            float: left;
+            
+            transition: 0.3s;
+            
+        }
+
+        content:hover {
+            background-color: #773c65;
+            transition: 0.3s;
+        }
+
+        sidebar {
+           
+            background-color: #f35c5c;
+            color: black;
+            width: 30%;
+            height: 450px;
+            float: right;
+            align-items: center;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        sidebar:hover {
+            background-color:#773c65; 
+            transition: 0.2s;
+        }
+
+        sidebar h1 {
+            margin-top: 170px;
+            transition: 0.2s;
+        }
+
+        sidebar h1:hover {
+            color: white;
+            transition: 0.2s;
+        }
+     
+
+        footer {
+            background-color: #be1212;
+            color: #fff;
+            float: left;
+            padding: 30px;
+            clear: both;
+            text-align: center;
+            width: 100%;
+        }
+
+        .list ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            font-size: 25px;
+            margin: 13px;
+            margin-left: 150px;
+            
+        }
+
+        .list a {
+            text-align: center;
+            list-style: none;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+
+        .list a:hover {
+            color: rgb(252, 140, 36);
+            transition: 0.3s;
+        }
+ 
+        .logo p {
+            margin-top: 8px;
+            
+        }
+        
+        fieldset {
+            border: none;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            transition: 0.2s;
+            
+        }
+
+        fieldset:hover {
+            background-color: rgb(87, 79, 192);
+            transition: 0.3s;
+            box-shadow: 9px 19px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        fieldset legend {
+            text-align: center;
+            font-size: 30px;
+            
+        }
+
+        fieldset img {
+            border-radius: 9px;
+            transition: 0.2s;
+        }
+
+        fieldset img:hover {
+            transition: 0.3s;
+            box-shadow: 9px 19px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        fieldset table {
+            margin-left: 20px;
+            
+        }
+
+        fieldset table td {
+            padding: 5px;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>UTS Web Dasar</h1>
+            <p>Hanif Dinata &laquo; 2301083015 &raquo; D3 Teknik Komputer</p>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li class="dashboard"><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Profil</a></li>
+                <li><a href="Mahasiswa.html">Mahasiswa</a></li>
+                <li><a href="HitungDiskon.html">Hitung Diskon</a></li>
+                <li><a href="datadosen.html">Data Dosen</a></li>
+            </ul>
+        </div>
+       
+    </header>
+    <content>
+        <fieldset>
+            <legend>BioData</legend>
+            <article>
+                <img src="aku.jpg" alt="" width="200px">
+            </article>
+                <article>
+                    <table class="bio">
+                        <tr>
+                            <td>Nama</td>
+                            <td width="20px">:</td>
+                            <td>Hanif Dinata</td>
+                        </tr>
+                        <tr>
+                            <td>Nim</td>
+                            <td width="20px">:</td>
+                            <td>2301083015</td>
+                        </tr>
+                        <tr>
+                            <td>Jurusan</td>
+                            <td width="20px">:</td>
+                            <td>Teknologi Informasi</td>
+                        </tr>
+                        <tr>
+                            <td>Prodi</td>
+                            <td width="20px">:</td>
+                            <td>D3 Teknik Komputer 1B</td>
+                        </tr>
+                        <tr>
+                            <td>Semester</td>
+                            <td width="20px">:</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>Kampus</td>
+                            <td width="20px">:</td>
+                            <td>Politeknik negeri Padang</td>
+                        </tr>
+                        <tr>
+                            <td>No. Telpon</td>
+                            <td width="20px">:</td>
+                            <td>0852-6439-8539  </td>
+                        </tr>
+                        <tr>
+                            <td>Alamat Rumah</td>
+                            <td width="20px">:</td>
+                            <td>Kab. Pasaman Barat, Kec. Ranah Batahan</td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                    </table>
+                </article>
+        </fieldset>
+    </content>
+    <sidebar>
+       <h1>Nothing</h1>
+    </sidebar>
+    <footer>
+        <p>CopyRight&copy; By Hanif dinata | 2301083015</p>
+    </footer>
+</body>
+
+</html>
